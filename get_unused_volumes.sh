@@ -9,3 +9,4 @@ echo " Massaging data for volume list : taking out spaces, qoutes and other char
 sed "s/^[ \t]*//" /tmp/unattached-volumes.txt | awk '{print $2}' | sed "s/\"//" | sed "s/\",//" > /tmp/unattached-volumes-v2.txt
 
 sort /tmp/unattached-volumes-v2.txt > $PWD/unattached-volumes-$TIMESTAMP.txt
+echo "i am in"
