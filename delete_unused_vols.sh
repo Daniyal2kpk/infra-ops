@@ -13,4 +13,4 @@ while IFS= read -r volid; do
   printf '%s\n' "Deleting $volid"
   aws ec2 delete-volume --volume-id $volid
 done < $1
-
+echo " done "
