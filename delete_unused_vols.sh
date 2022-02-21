@@ -14,3 +14,4 @@ while IFS= read -r volid; do
   aws ec2 delete-volume --volume-id $volid
 done < $1
 echo " done "
+echo " this is done , need to test "
